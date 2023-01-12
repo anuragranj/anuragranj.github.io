@@ -10,10 +10,10 @@
   <meta name="description" content="Anurag's personal and research website.
 ">
 
-  <link rel="shortcut icon" href="/assets/img/favicon.ico">
+  <link rel="shortcut icon" href="http://localhost:4000//assets/img/favicon.ico">
 
-  <link rel="stylesheet" href="/assets/css/main.css">
-  <link rel="canonical" href="/projects/03_mesh_autoencoders/">
+  <link rel="stylesheet" href="http://localhost:4000//assets/css/main.css">
+  <link rel="canonical" href="http://localhost:4000//projects/03_mesh_autoencoders/">
 </head>
 
 
@@ -26,7 +26,7 @@
     
     <span class="site-title">
         
-        <a href="">
+        <a href="http://localhost:4000">
         <strong>Anurag</strong> Ranjan </a>
     </span>
     
@@ -35,36 +35,36 @@
 
       <div class="trigger">
         <!-- About -->
-        <!--a class="page-link" href="/">about</a-->
+        <!--a class="page-link" href="http://localhost:4000//">about</a-->
 
         <!-- Blog -->
-        <a class="page-link" href="/blog/">blog</a>
+        <a class="page-link" href="http://localhost:4000//blog/">blog</a>
 
         <!-- Pages -->
         
           
         
           
-            <a class="page-link" href="/bio/">bio</a>
+            <a class="page-link" href="http://localhost:4000//bio/">bio</a>
           
         
           
-            <a class="page-link" href="/media/">media</a>
+            <a class="page-link" href="http://localhost:4000//media/">media</a>
           
         
           
-            <a class="page-link" href="/projects/">projects</a>
+            <a class="page-link" href="http://localhost:4000//projects/">projects</a>
           
         
           
-            <a class="page-link" href="/publications/">publications</a>
+            <a class="page-link" href="http://localhost:4000//publications/">publications</a>
           
         
           
         
 
         <!-- CV link -->
-        <!-- <a class="page-link" href="/assets/pdf/CV.pdf">vitae</a> -->
+        <!-- <a class="page-link" href="http://localhost:4000//assets/pdf/CV.pdf">vitae</a> -->
 
       </div>
     </nav>
@@ -103,13 +103,124 @@
 
 <h3 id="dressing-humans-in-3d">Dressing Humans in 3D</h3>
 
-<p>(missing reference)</p>
+<p><a class="citation" href="#ma2020dressing">(Ma et al., 2020)</a></p>
 
 <p>Three-dimensional human body models are widely used in the analysis of human pose and motion. Existing models, however, are learned from minimally-clothed humans and thus do not capture the complexity of dressed humans in common images and videos. To address this, we learn a generative 3D mesh model of clothing from 3D scans of people with varying pose. Going beyond previous work, our generative model is conditioned on different clothing types, giving the ability to dress different body shapes in a variety of clothing. To do so, we train a conditional Mesh-VAE-GAN on clothing displacements from a 3D SMPL body model.</p>
 
 <p>This generative clothing model enables us to sample various types of clothing, in novel poses, on top of SMPL. With a focus on clothing geometry, the model captures both global shape and local structure, effectively extending the SMPL model to add clothing. To our knowledge, this is the first conditional VAE-GAN that works on 3D meshes. For clothing specifically, it is the first such model that directly dresses 3D human body meshes and generalizes to different poses.</p>
 
 <ol class="bibliography"><li>
+
+<div id="ma2020dressing">
+  <div class="col two">
+  
+    <span class="title">Learning to Dress 3D People in Generative Clothing</span>
+    <span class="author">
+      
+        
+          
+            
+              <a href="https://www.is.mpg.de/person/qma" target="_blank">Qianli Ma</a>,
+            
+          
+        
+      
+        
+          
+            
+              Jinlong Yang,
+            
+          
+        
+      
+        
+          
+            <em>Anurag Ranjan</em>,
+          
+        
+      
+        
+          
+            
+              Sergi Pujades,
+            
+          
+        
+      
+        
+          
+            
+              Gerard Pons-Moll,
+            
+          
+        
+      
+        
+          
+            
+              <a href="https://ps.is.tuebingen.mpg.de/person/stang" target="_blank">Siyu Tang</a>,
+            
+          
+        
+      
+        
+          and
+          
+            
+              <a href="https://ps.is.mpg.de/~black" target="_blank">Michael J. Black</a>
+            
+          
+        
+      
+    </span>
+
+    <span class="periodical">
+    
+      <em>In Computer Vision and Pattern Recognition (CVPR)</em>
+    
+    
+      2020
+    
+    </span>
+  
+
+  <span class="links">
+  <!-- 
+    [<a class="abstract">Abs</a>]
+   -->
+  
+    [<a href="http://arxiv.org/abs/1907.13615" target="_blank">arXiv</a>]
+  
+  
+  
+  
+  
+  
+  
+    [<a href="https://github.com/QianliM/CAPE" target="_blank">Code</a>]
+  
+  
+    [<a href="https://cape.is.tue.mpg.de/" target="_blank">URL</a>]
+  
+  
+  </span>
+
+  <!-- Hidden abstract block -->
+  
+  <div>
+    <p>CAPE is a Graph-CNN based generative model for dressing 3D meshes of human body. It is compatible with the popular body model, SMPL, and can generalize to diverse body shapes and body poses. It is designed to be "plug-and-play" for many applications that already use SMPL. The CAPE Dataset provides SMPL mesh registration of 4D scans of people in clothing, along with registered scans of the ground truth body shapes under clothing.</p>
+  </div>
+  
+
+</div>
+
+  
+    <img class="col one" src="/assets/img/autoenclother.jpg" />
+  
+
+</div>
+</li>
+<li>
 
 <div id="ranjan2018generating">
   <div class="col two">
@@ -211,7 +322,7 @@
     <footer>
 
   <div class="wrapper">
-    &copy; Copyright 2022 Anurag Ranjan.
+    &copy; Copyright 2023 Anurag Ranjan.
     Powered by <a href="http://jekyllrb.com/" target="_blank">Jekyll</a> with <a href="https://github.com/alshedivat/al-folio">al-folio</a> theme. Hosted by <a href="https://pages.github.com/" target="_blank">GitHub Pages</a>.
 
     
@@ -224,20 +335,20 @@
 <script src="//code.jquery.com/jquery-1.12.4.min.js"></script>
 
 <!-- Load Common JS -->
-<script src="/assets/js/common.js"></script>
+<script src="http://localhost:4000//assets/js/common.js"></script>
 
 
 <!-- Load KaTeX -->
 <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/KaTeX/0.7.1/katex.min.css">
 <script src="//cdnjs.cloudflare.com/ajax/libs/KaTeX/0.7.1/katex.min.js"></script>
-<script src="/assets/js/katex.js"></script>
+<script src="http://localhost:4000//assets/js/katex.js"></script>
 
 
 
 
 <!-- Include custom icon fonts -->
-<link rel="stylesheet" href="/assets/css/font-awesome.min.css">
-<link rel="stylesheet" href="/assets/css/academicons.min.css">
+<link rel="stylesheet" href="http://localhost:4000//assets/css/font-awesome.min.css">
+<link rel="stylesheet" href="http://localhost:4000//assets/css/academicons.min.css">
 
 <!-- Google Analytics -->
 <script>
