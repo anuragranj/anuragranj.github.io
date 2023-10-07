@@ -1,0 +1,4 @@
+User-agent: *
+Disallow:
+
+Sitemap: https://anuragranjan.com/about/sitemap.xml
